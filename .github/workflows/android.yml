@@ -19,7 +19,7 @@ jobs:
         run: |
           mkdir -p www assets
           cp index.html www/index.html
-          cp icon-*.png assets/
+          cp icon-*.png assets/ || true
       - run: npm install
       - run: npx cap add android
       - name: Icones (facultatif)
